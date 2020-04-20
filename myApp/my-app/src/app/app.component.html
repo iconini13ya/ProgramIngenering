@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row head">
+    <div class="col Logo">
+      <img src="../assets/img/Logo.png" alt="">
+    </div>
+    <div class="col buHead text-right">
+      <a type="button" class="btn btn-info ">Зарегестрироваться</a>
+      <a type="button" class="btn btn-info ">Войти</a>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  </div>
+<div class="row wrapper container-fluid">
+  <div class="col">
+      Сайт создан Яранцевым Владимиром Андреевичем в качестве задания по программной инженерии.
+  </div>
+  <div>
+    © 2020 Московский политехнический университет
+  </div>
+</div>
+
+<h1>{{title}}</h1>
+<h1> <button (click)="FindSomeText()"> Нажми</button></h1>
+<div *ngFor="let post of MyData"> 
+  <div> {{post.author}}</div>
+
+</div>
