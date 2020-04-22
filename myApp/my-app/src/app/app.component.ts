@@ -11,10 +11,10 @@ export class AppComponent {
   MyData:any;
   constructor(private http: HttpClient){}
       
-  FindSomeText(){
-      this.http.get('http://localhost:3000/posts').subscribe((response)=>{
-        this.MyData=response;
-        console.log(this.MyData);  
-      });
-  }
+  // FindSomeText(){
+  //     this.http.get('http://localhost:3000/posts').subscribe((response)=>{
+  //       this.MyData=response;
+  //       console.log(this.MyData);  
+  //     });
+  // }
 }
