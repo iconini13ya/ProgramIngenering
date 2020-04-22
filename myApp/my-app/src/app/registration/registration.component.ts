@@ -20,8 +20,10 @@ export class RegistrationComponent implements OnInit {
   }
 
   registerUser(){
-  return this.http.post("http://localhost:4200/registration",this.newUser).subscribe((response)=>{
-    // console.log(response);
+    console.log("Ушел на пост")
+    console.log(this.newUser);
+    this.http.post("http://localhost:3000/registration",this.newUser).subscribe((response)=>{
+    console.log(response);
   });
   }
 }
