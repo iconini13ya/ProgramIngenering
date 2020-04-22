@@ -1,0 +1,46 @@
+.head div{
+    margin: 20px 0px 20px 0px;
+}
+
+.container-fluid{
+    background-color: #6D20D2;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-bottom: 20px;
+}
+
+.buHead a{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.textCMR{
+    margin-bottom: 20px;
+}
+.mainText div{
+    color:white;    
+}
+
+.mainIMG{
+    min-width: 200px;
+}
+.textClient{
+    font-size: 20px;
+}
+.wrapper{
+    color: white;
+    background-color: #3d3b4e;
+}
+.wrapper div{
+    margin-top: 20px;
+}
+.Reg{
+    margin-top: 40px;
+}
+.inputtext{
+    margin-top: 25px;
+}
+.personInfo{
+    color: yellow;
+    font-size: 20px;
+    margin-top: 20px;
+}

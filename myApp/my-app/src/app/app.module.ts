@@ -10,11 +10,13 @@ import { from } from 'rxjs';
 import { RegistrationComponent } from './registration/registration.component';
 import { EnterComponent } from './enter/enter.component';
 import { TeacherComponent } from './teacher/teacher.component';
+import { SqlServiceService } from './sql-service.service';
 
 const appRoutes: Routes=[
   {path:'',component:AboutProgrammComponent},
   {path:'registration',component:RegistrationComponent},
-  {path:'enter',component:EnterComponent}
+  {path:'enter',component:EnterComponent},
+  {path:'teacher',component:TeacherComponent}
 ]
 
 @NgModule({
@@ -32,7 +34,7 @@ const appRoutes: Routes=[
     RouterModule.forRoot(appRoutes),
     FormsModule
   ],
-  providers: [],
+  providers: [SqlServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

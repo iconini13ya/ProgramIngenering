@@ -30,7 +30,7 @@ app.post("/registration",jsonParser,function(req,res){
     if(!req.body) return res.sendStatus(400);
     var connection = getMySQLConnection();
     connection.connect();
-        connection.query(`INSERT INTO chhome.users (uname, sname, login, upassword, mail, adminrole) VALUES (`+`"`+`${req.body.name}`+`"`+`,`+`"`+`${req.body.sname}`+`"`+`,`+`"`+`${req.body.login}`+`"`+`,`+`"`+`${req.body.password}`+`"`+`,`+`"`+`${req.body.mail}`+`"`+`, '0');`,function(error,result){ 
+        connection.query(`INSERT INTO chhome.users (uname, sname, login, upassword, mail, adminrole) VALUES (`+`"`+`${req.body.name}`+`"`+`,`+`"`+`${req.body.sname}`+`"`+`,`+`"`+`${req.body.login}`+`"`+`,`+`"`+`${req.body.password}`+`"`+`,`+`"`+`${req.body.mail}`+`"`+`, '1');`,function(error,result){ 
             if (error)
             {
                 console.log(error);
