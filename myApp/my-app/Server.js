@@ -39,18 +39,19 @@ app.post("/registration",jsonParser,function(req,res){
                 res.send(result.body);
             }
         });
+        
 });
 
-// app.get("/posts",function(req,res){
-//     var connection = getMySQLConnection();
-//     connection.connect();
-        // connection.query('SELECT * FROM test.posts;',function(error,result){
-        //     if (error){console.log(error);}
-        //     else{
-        //         res.send(result);
-        //     }
-        // });
-// });
+app.get("/enter",function(req,res){
+    var connection = getMySQLConnection();
+    connection.connect();
+        connection.query(`SELECT * FROM chhome.users WHERE login=`+`"`+`${req.query.login}`+`" AND upassword=`+`"`+`${req.query.password}`+`"`+`;`,function(error,result){
+            if (error){console.log(error);}
+            else{
+                res.send(result);
+            }
+        });      
+});
   
 app.listen(3000,function(){
     console.log("Порт 3000 поднят");

@@ -48,3 +48,7 @@ input{
 .enterButton{
     margin-top: 20px;
 }
+.badPass{
+    font-size: 20px;
+    color: red;
+}

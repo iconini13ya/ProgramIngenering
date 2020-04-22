@@ -9,6 +9,7 @@ import { AboutProgrammComponent } from './about-programm/about-programm.componen
 import { from } from 'rxjs';
 import { RegistrationComponent } from './registration/registration.component';
 import { EnterComponent } from './enter/enter.component';
+import { TeacherComponent } from './teacher/teacher.component';
 
 const appRoutes: Routes=[
   {path:'',component:AboutProgrammComponent},
@@ -21,7 +22,8 @@ const appRoutes: Routes=[
     AppComponent,
     AboutProgrammComponent,
     RegistrationComponent,
-    EnterComponent
+    EnterComponent,
+    TeacherComponent
   ],
   imports: [
     BrowserModule,

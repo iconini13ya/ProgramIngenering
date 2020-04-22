@@ -12,19 +12,26 @@
         <h1>Вход в систему</h1>
       </div>
     </div>
-    <div class="row container-fluid text-center">
-      <div class="col">
-        <input type="text" placeholder="Логин">
+    <div class="row badPass container-fluid text-center" style="visibility:{{badPassVisible}};">
+      <div class="col ">
+        <div>
+          Неверный логин или пароль
+        </div>
       </div>
     </div>
     <div class="row container-fluid text-center">
       <div class="col">
-        <input type="text" placeholder="Пароль">
+        <input type="text" placeholder="Логин" [(ngModel)]="userData.loginCash"> 
       </div>
     </div>
     <div class="row container-fluid text-center">
       <div class="col">
-        <a type="button" class="btn btn-info enterButton">Войти</a>
+        <input type="text" placeholder="Пароль" [(ngModel)]="userData.passwordCash">
+      </div>
+    </div>
+    <div class="row container-fluid text-center">
+      <div class="col">
+        <a type="button" class="btn btn-info enterButton" (click)="findUserAndEnter()">Войти</a>
       </div>
     </div>
   </div>
