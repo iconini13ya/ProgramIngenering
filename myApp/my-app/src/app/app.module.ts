@@ -8,17 +8,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { AboutProgrammComponent } from './about-programm/about-programm.component';
 import { from } from 'rxjs';
 import { RegistrationComponent } from './registration/registration.component';
+import { EnterComponent } from './enter/enter.component';
 
 const appRoutes: Routes=[
   {path:'',component:AboutProgrammComponent},
-  {path:'registration',component:RegistrationComponent}
+  {path:'registration',component:RegistrationComponent},
+  {path:'enter',component:EnterComponent}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutProgrammComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    EnterComponent
   ],
   imports: [
     BrowserModule,

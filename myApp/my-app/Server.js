@@ -26,12 +26,9 @@ app.use(function(req, res, next) {
 // Методы сервера
 
 app.post("/registration",jsonParser,function(req,res){
-    console.log("Получил запрос на пост");
-    console.log(req.body.name);
     // если не переданы данные, возвращаем ошибку
     if(!req.body) return res.sendStatus(400);
     var connection = getMySQLConnection();
-    console.log(`INSERT INTO chhome.users (uname, sname, login, upassword, mail, adminrole) VALUES (`+`"`+`${req.body.name}`+`"`+`,`+`"`+`${req.body.sname}`+`"`+`,`+`"`+`${req.body.login}`+`"`+`,`+`"`+`${req.body.password}`+`"`+`,`+`"`+`${req.body.mail}`+`"`+`, '0');`);
     connection.connect();
         connection.query(`INSERT INTO chhome.users (uname, sname, login, upassword, mail, adminrole) VALUES (`+`"`+`${req.body.name}`+`"`+`,`+`"`+`${req.body.sname}`+`"`+`,`+`"`+`${req.body.login}`+`"`+`,`+`"`+`${req.body.password}`+`"`+`,`+`"`+`${req.body.mail}`+`"`+`, '0');`,function(error,result){ 
             if (error)
