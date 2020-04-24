@@ -130,7 +130,7 @@ app.post("/addch",jsonParser,function(req,res){
 app.get("/visits",function(req,res){
     var connection = getMySQLConnection();
     connection.connect();
-        connection.query(`SELECT * FROM chhome.visits WHERE idvisits=`+`"`+`${req.query.chID}`+`";`,function(error,result){
+        connection.query(`SELECT * FROM chhome.visits WHERE idofch=`+`"`+`${req.query.chID}`+`";`,function(error,result){
             if (error){console.log(error);}
             else{
                 res.send(result);
