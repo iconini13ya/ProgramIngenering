@@ -1,0 +1,13 @@
+<div class="row head">
+    <div class="col Logo">
+      <img src="../assets/img/Logo.png" alt="">
+    </div>
+    <div class="col buHead text-right">
+        <a type="button" class="btn btn-info" routerLink="/addvisit">Добавить посещение</a>
+      <a type="button" class="btn btn-info" routerLink="/groups">В группы</a> 
+      <a type="button" class="btn btn-info" routerLink="/chlist">К детям</a>
+    </div>
+  </div>
+<div class="row groupcontent justify-content-center" *ngFor="let visit of visits, let i=index">
+    <a  class="btn btn-info">Посещение {{i+1}} Дата посещения: {{visit.dateofvisit | date : 'dd-MM-yyyy'}}</a>
+</div>

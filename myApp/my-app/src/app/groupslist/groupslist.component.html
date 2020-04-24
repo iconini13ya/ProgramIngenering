@@ -1,0 +1,12 @@
+<div class="row head">
+    <div class="col Logo">
+      <img src="../assets/img/Logo.png" alt="">
+    </div>
+    <div class="col buHead text-right">
+      <a type="button" class="btn btn-info" routerLink="/addgroup">Добавить группу</a> 
+      <a type="button" class="btn btn-info" routerLink="/teacher">В профиль</a>
+    </div>
+  </div>
+<div class="row groupcontent justify-content-center" *ngFor="let group of groups">
+  <a type="button" class="btn btn-info" (click)="getGroupNum(group.groupnum)">Группа {{group.groupnum}}</a>
+</div>

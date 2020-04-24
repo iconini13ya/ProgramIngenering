@@ -1,0 +1,25 @@
+<div class="row head">
+    <div class="col Logo">
+      <img src="../assets/img/Logo.png" alt="">
+    </div>
+    <div class="col buHead text-right">
+      <a type="button" class="btn btn-info" routerLink="/teacher">В профиль</a>
+    </div>
+  </div>
+<div class="row container-fluid text-center inputtext">
+    <div class="col">
+     <h1>
+         Добавить группу
+     </h1>
+    </div>
+</div>
+<div class="row container-fluid text-center inputtext">
+    <div class="col">
+      <input type="text" placeholder="Номер группы" [(ngModel)]="group.Num">
+    </div>
+</div>
+<div class="row container-fluid text-center inputtext">
+    <div class="col">
+      <a type="button" class="btn btn-info " (click)="registerGroup()" >Добавить группу</a>
+    </div>
+</div>

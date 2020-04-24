@@ -6,6 +6,8 @@ import {HttpClient, HttpParams} from '@angular/common/http';
 
 
 export class SqlServiceService {
+  currentChId="";
+  currentGroup="";
   cashUserData={
   name:"",
   sname:"",

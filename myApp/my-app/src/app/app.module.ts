@@ -11,12 +11,26 @@ import { RegistrationComponent } from './registration/registration.component';
 import { EnterComponent } from './enter/enter.component';
 import { TeacherComponent } from './teacher/teacher.component';
 import { SqlServiceService } from './sql-service.service';
+import { TeacherregistrationComponent } from './teacherregistration/teacherregistration.component';
+import { GroupslistComponent } from './groupslist/groupslist.component';
+import { AddgroupComponent } from './addgroup/addgroup.component';
+import { ChlistComponent } from './chlist/chlist.component';
+import { AddchComponent } from './addch/addch.component';
+import { VisitlistComponent } from './visitlist/visitlist.component';
+import { AddvisitComponent } from './addvisit/addvisit.component';
 
 const appRoutes: Routes=[
   {path:'',component:AboutProgrammComponent},
   {path:'registration',component:RegistrationComponent},
   {path:'enter',component:EnterComponent},
-  {path:'teacher',component:TeacherComponent}
+  {path:'teacher',component:TeacherComponent},
+  {path:'teacherregistration',component:TeacherregistrationComponent},
+  {path:'groups',component:GroupslistComponent},
+  {path:'addgroup',component:AddgroupComponent},
+  {path:'chlist',component:ChlistComponent},
+  {path:'addch',component:AddchComponent},
+  {path:'visits',component:VisitlistComponent},
+  {path:'addvisit',component:AddvisitComponent},
 ]
 
 @NgModule({
@@ -25,7 +39,14 @@ const appRoutes: Routes=[
     AboutProgrammComponent,
     RegistrationComponent,
     EnterComponent,
-    TeacherComponent
+    TeacherComponent,
+    TeacherregistrationComponent,
+    GroupslistComponent,
+    AddgroupComponent,
+    ChlistComponent,
+    AddchComponent,
+    VisitlistComponent,
+    AddvisitComponent
   ],
   imports: [
     BrowserModule,

@@ -39,21 +39,6 @@
 .inputtext{
     margin-top: 25px;
 }
-.personInfo{
-    color: yellow;
-    font-size: 20px;
+.groupcontent{
     margin-top: 20px;
-}
-.teachercontent{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.teachernav{
-    background-color: teal;
-}
-.navbarr{
-    border-radius: 10px;
-}
-.Logo img{
-    margin-left: 90px;
 }

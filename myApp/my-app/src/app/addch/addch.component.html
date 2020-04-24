@@ -1,0 +1,36 @@
+<div class="row head">
+    <div class="col Logo">
+      <img src="../assets/img/Logo.png" alt="">
+    </div>
+    <div class="col buHead text-right">
+      <a type="button" class="btn btn-info" routerLink="/groups">В группы</a> 
+    </div>
+  </div>
+<div class="row Reg ">
+    <div class="row content text-center container-fluid d-flex align-items-center">
+      <div class="col">
+        <h1>Добавить ребенка</h1>
+      </div>
+    </div>
+    <div class="row container-fluid text-center inputtext">
+      <div class="col text-right ">
+        <input type="text" placeholder="Имя" [(ngModel)]="newCh.name">
+      </div>
+      <div class="col text-left">
+        <input type="text" placeholder="Фамилия" [(ngModel)]="newCh.sname">
+      </div>
+    </div>
+    <div class="row container-fluid text-center inputtext">
+      <div class="col text-right">
+        <input type="text" placeholder="Возраст" [(ngModel)]="newCh.age">
+      </div>
+      <div class="col text-left">
+        <input type="text" placeholder="Пол М/Ж" [(ngModel)]="newCh.sex">
+      </div>
+    </div>
+    <div class="row container-fluid text-center inputtext">
+      <div class="col">
+        <a type="button" class="btn btn-info " (click)="regCh()">Зарегистрировать ребенка</a>
+      </div>
+    </div>
+</div>

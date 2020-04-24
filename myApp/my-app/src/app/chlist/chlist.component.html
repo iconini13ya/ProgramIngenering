@@ -1,0 +1,15 @@
+<div class="row head">
+    <div class="col Logo">
+      <img src="../assets/img/Logo.png" alt="">
+    </div>
+    <div class="col buHead text-right">
+        <a type="button" class="btn btn-info" routerLink="/addch">Добавить ребенка в группу</a>
+      <a type="button" class="btn btn-info" routerLink="/groups">В группы</a> 
+      <a type="button" class="btn btn-info" routerLink="/teacher">В профиль</a>
+    </div>
+  </div>
+<div class="row groupcontent justify-content-center" *ngFor="let ch of children">
+  <a type="button" class="btn btn-info" (click)="seeVisits(ch.idchildren)">{{ch.chsname}} {{ch.chname}} Возраст: {{ch.chage}} Пол: {{ch.chsex}}
+
+  </a>
+</div>
