@@ -24,6 +24,6 @@ describe("Test 1", function() {
   }
 
   function getUsers(){
-    if (usersDatabase = 0){return true}
+    if (groupDatabase = 0){return true}
     else {return false};
   }
