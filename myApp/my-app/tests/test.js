@@ -1,24 +1,29 @@
 
+describe("Test 1", function() {
 
-
-
-describe("nax", function() {
-
-    it("возводит в n-ю степень", function() {
-      assert.equal(pow(2, 3), 8);
+    it("получает детей с базы данных", function() {
+      
+      assert(getChildren());
     });
   
   });
+  
+  describe("Test 2", function() {
 
-  describe("pow", function() {
-
-    it("возводит в n-ю степень", function() {
-      assert.equal(pow(2, 3), 8);
+    it("Получает таблицу пользователей с базы данных", function() {
+      assert.equal(getUsers(),true);
     });
   
   });
  
 
-  function pow() {
-    return 8; // :) мы - мошенники!
+  function getChildren() {
+    if (chDatabase = 0)
+    {return true}
+    else {return false};
+  }
+
+  function getUsers(){
+    if (usersDatabase = 0){return true}
+    else {return false};
   }
