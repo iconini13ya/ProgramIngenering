@@ -21,7 +21,7 @@ export class EnterComponent implements OnInit {
   }
   findUserAndEnter(){
     const params = new HttpParams().set("login",this.userData.loginCash).set("password",this.userData.passwordCash);
-    this.http.get("http://localhost:3000/enter",{params}).subscribe((result)=>{
+    this.http.get("http://80.87.194.192:3000/enter",{params}).subscribe((result)=>{
       if(result==0){
         this.badPassVisible="visible";
       }

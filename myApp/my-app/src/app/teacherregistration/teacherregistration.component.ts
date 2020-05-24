@@ -19,7 +19,7 @@ export class TeacherregistrationComponent implements OnInit {
   ngOnInit(): void {
   }
   registerUser(){
-    this.http.post("http://localhost:3000/teacherregistration",this.newUser).subscribe((response)=>{
+    this.http.post("http://80.87.194.192:3000/teacherregistration",this.newUser).subscribe((response)=>{
   });
 }
 }

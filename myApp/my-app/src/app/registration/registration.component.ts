@@ -20,7 +20,7 @@ export class RegistrationComponent implements OnInit {
   }
 
   registerUser(){
-    this.http.post("http://localhost:3000/registration",this.newUser).subscribe((response)=>{
+    this.http.post("http://80.87.194.192:3000/registration",this.newUser).subscribe((response)=>{
   });
   }
 }

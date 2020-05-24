@@ -22,7 +22,7 @@ export class AddvisitComponent implements OnInit {
     var myDate = formatDate(new Date(), 'yyyy/MM/dd', 'en');
     this.Data.chID=this.srv.currentChId;
     this.Data.date=myDate;
-    this.http.post("http://localhost:3000/addvisit",this.Data).subscribe((result)=>{
+    this.http.post("http://80.87.194.192:3000/addvisit",this.Data).subscribe((result)=>{
       this.router.navigate(['/chlist']);
     });
   }

@@ -158,4 +158,9 @@ app.post("/addvisit",jsonParser,function(req,res){
 
 app.listen(3000,function(){
     console.log("Порт 3000 поднят");
+    var connection = getMySQLConnection();
+    connection.connect((err)=>{
+        if (err) throw err;
+        console.log("Connected!");
+    });
 });

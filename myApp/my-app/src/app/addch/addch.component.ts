@@ -23,7 +23,7 @@ export class AddchComponent implements OnInit {
   regCh(){
     this.newCh.groupNum=this.srv.currentGroup;
     this.newCh.sex=this.newCh.sex.toUpperCase();
-    this.http.post("http://localhost:3000/addch",this.newCh).subscribe((result)=>{
+    this.http.post("http://80.87.194.192:3000/addch",this.newCh).subscribe((result)=>{
       this.router.navigate(['/chlist']);
     });
   }

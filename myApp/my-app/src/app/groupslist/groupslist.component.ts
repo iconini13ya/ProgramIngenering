@@ -13,7 +13,7 @@ export class GroupslistComponent implements OnInit {
   constructor(private http: HttpClient,private srv:SqlServiceService,private router:Router) { }
 
   ngOnInit(): void {
-    this.http.get("http://localhost:3000/groups").subscribe((response)=>{
+    this.http.get("http://80.87.194.192:3000/groups").subscribe((response)=>{
       this.groups=response;
     });
   }

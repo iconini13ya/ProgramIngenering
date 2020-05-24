@@ -19,7 +19,7 @@ export class VisitlistComponent implements OnInit {
     this.Data.chID=this.srv.currentChId;
     const params = new HttpParams().set("chID",this.Data.chID);
     console.log(this.Data.chID);
-    this.http.get("http://localhost:3000/visits",{params}).subscribe((result)=>{
+    this.http.get("http://80.87.194.192:3000/visits",{params}).subscribe((result)=>{
       this.visits=result;
     });
   }

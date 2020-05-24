@@ -17,7 +17,7 @@ export class ChlistComponent implements OnInit {
 
   ngOnInit(): void {
     const params = new HttpParams().set("grNum",this.srv.currentGroup);
-    this.http.get("http://localhost:3000/chlist",{params}).subscribe((result)=>{
+    this.http.get("http://80.87.194.192:3000/chlist",{params}).subscribe((result)=>{
       this.children=result;
     });
   }

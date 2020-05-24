@@ -17,7 +17,7 @@ export class AddgroupComponent implements OnInit {
   ngOnInit(): void {
   }
   registerGroup(){
-    this.http.post("http://localhost:3000/addgroup",this.group).subscribe((response)=>{
+    this.http.post("http://80.87.194.192:3000/addgroup",this.group).subscribe((response)=>{
       this.router.navigate(['/groups']);
   });
   }
