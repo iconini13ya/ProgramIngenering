@@ -10,7 +10,7 @@ function getMySQLConnection() {
 	  host: "localhost",
     user: "root",
     database: "chhome",
-    password: "VjSa1Der"
+ 
 	});
 }
 
